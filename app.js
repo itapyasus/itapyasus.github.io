@@ -24,7 +24,7 @@ speech.addEventListener('result', function(e) {
     case "ビデオ":
       getVideo();
       break;
-    case "Radiko":
+    case "ラジオ":
       getRadio();
       break;
     case "イベント":
@@ -45,28 +45,28 @@ function getSearch() {
     
     iframe.width = '400px';
     iframe.height = '400px';
-    iframe.src = 'http://www.yahoo.co.jp';
+    iframe.src = 'https://duckduckgo.com/';
     content.appendChild(iframe);
 }
 
 //ビデオ
 function getVideo() {
-    var URL = '<iframe width="560" height="315" src="https://www.youtube.com/watch?v=zsjuPcF8QaI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>';
+    var URL = '<iframe width="560" height="315" src="https://www.youtube.com/embed/TBEuMfNqv_k?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1" frameborder="0" allowfullscreen></iframe>';
     
     content.innerHTML = URL;
 }
 
-//らじこ
+//ラジオ
 function getRadio() {
-  var URL = '<iframe src="http://radiko.jp" style="width:50%;height:100px;" scrolling="no" frameborder="no"></iframe>';
+  var URL = '<iframe src="http://tunein.com/embed/player/s48940" style="width:50%;height:100px;" scrolling="no" frameborder="no"></iframe>';
   
   content.innerHTML = URL;
 }
 
 //イベント
 function getEventData() {
-  // キーワードを「豊国」に設定
-  var baseURL = "http://yahoo.co.jp?keyword=豊国学園&format=jsonp&count=20&callback=callback";
+  // キーワードを「東京」に設定
+  var baseURL = "https://api.atnd.org/events/?keyword=東京&format=jsonp&count=20&callback=callback";
   var script = document.createElement('script');
   
   script.src = baseURL;
