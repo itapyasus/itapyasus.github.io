@@ -58,15 +58,15 @@ function getVideo() {
 
 //ラジオ
 function getRadio() {
-  var URL = '<iframe src="http://tunein.com/embed/player/s48940" style="width:50%;height:100px;" scrolling="no" frameborder="no"></iframe>';
+  var URL = '<iframe src="http://radiko.jp" style="width:50%;height:100px;" scrolling="no" frameborder="no"></iframe>';
   
   content.innerHTML = URL;
 }
 
 //イベント
 function getEventData() {
-  // キーワードを「東京」に設定
-  var baseURL = "https://api.atnd.org/events/?keyword=東京&format=jsonp&count=20&callback=callback";
+  // キーワードを「豊国」に設定
+  var baseURL = "https://api.atnd.org/events/?keyword=豊国学園&format=jsonp&count=20&callback=callback";
   var script = document.createElement('script');
   
   script.src = baseURL;
