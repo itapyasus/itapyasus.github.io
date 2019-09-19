@@ -24,7 +24,7 @@ speech.addEventListener('result', function(e) {
     case "ビデオ":
       getVideo();
       break;
-    case "ラジオ":
+    case "らじこ":
       getRadio();
       break;
     case "イベント":
@@ -45,7 +45,7 @@ function getSearch() {
     
     iframe.width = '400px';
     iframe.height = '400px';
-    iframe.src = 'https://duckduckgo.com/';
+    iframe.src = 'http://www.yahoo.co.jp';
     content.appendChild(iframe);
 }
 
