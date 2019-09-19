@@ -51,22 +51,22 @@ function getSearch() {
 
 //ビデオ
 function getVideo() {
-    var URL = '<iframe width="560" height="315" src="https://www.youtube.com/watch?v=8wieGNfKCLg" frameborder="0" allowfullscreen></iframe>';
+    var URL = '<iframe width="560" height="315" src="https://www.youtube.com/embed/TBEuMfNqv_k?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1" frameborder="0" allowfullscreen></iframe>';
     
     content.innerHTML = URL;
 }
 
 //ラジオ
 function getRadio() {
-  var URL = '<iframe src="http://radiko.jp/" style="width:50%;height:100px;" scrolling="no" frameborder="no"></iframe>';
+  var URL = '<iframe src="http://tunein.com/embed/player/s48940" style="width:50%;height:100px;" scrolling="no" frameborder="no"></iframe>';
   
   content.innerHTML = URL;
 }
 
 //イベント
 function getEventData() {
-  // キーワードを「福岡」に設定
-  var baseURL = "https://api.atnd.org/events/?keyword=福岡&format=jsonp&count=20&callback=callback";
+  // キーワードを「東京」に設定
+  var baseURL = "https://api.atnd.org/events/?keyword=東京&format=jsonp&count=20&callback=callback";
   var script = document.createElement('script');
   
   script.src = baseURL;
