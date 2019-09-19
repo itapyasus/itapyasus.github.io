@@ -24,7 +24,7 @@ speech.addEventListener('result', function(e) {
     case "ビデオ":
       getVideo();
       break;
-    case "らじこ":
+    case "Rajiko":
       getRadio();
       break;
     case "イベント":
@@ -51,7 +51,7 @@ function getSearch() {
 
 //ビデオ
 function getVideo() {
-    var URL = '<iframe width="560" height="315" src="https://www.youtube.com/embed/TBEuMfNqv_k?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1" frameborder="0" allowfullscreen></iframe>';
+    var URL = '<iframe width="560" height="315" src="https://www.youtube.com/watch?v=zsjuPcF8QaI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>';
     
     content.innerHTML = URL;
 }
