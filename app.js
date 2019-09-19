@@ -24,7 +24,7 @@ speech.addEventListener('result', function(e) {
     case "ビデオ":
       getVideo();
       break;
-    case "Rajiko":
+    case "Radiko":
       getRadio();
       break;
     case "イベント":
@@ -66,7 +66,7 @@ function getRadio() {
 //イベント
 function getEventData() {
   // キーワードを「豊国」に設定
-  var baseURL = "https://api.atnd.org/events/?keyword=豊国学園&format=jsonp&count=20&callback=callback";
+  var baseURL = "http://yahoo.co.jp?keyword=豊国学園&format=jsonp&count=20&callback=callback";
   var script = document.createElement('script');
   
   script.src = baseURL;
