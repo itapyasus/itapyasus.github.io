@@ -56,7 +56,7 @@ function getVideo() {
     content.innerHTML = URL;
 }
 
-//ラジオ
+//らじこ
 function getRadio() {
   var URL = '<iframe src="http://radiko.jp" style="width:50%;height:100px;" scrolling="no" frameborder="no"></iframe>';
   
