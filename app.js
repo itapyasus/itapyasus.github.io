@@ -51,7 +51,7 @@ function getSearch() {
 
 //ビデオ
 function getVideo() {
-    var URL = '<iframe width="560" height="315" src="https://www.youtube.com/embed/TBEuMfNqv_k?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1" frameborder="0" allowfullscreen></iframe>';
+    var URL = '<iframe width="560" height="315" src="https://youtu.be/Bvr2p5prKBQ" frameborder="0" allowfullscreen></iframe>';
     
     content.innerHTML = URL;
 }
@@ -65,8 +65,8 @@ function getRadio() {
 
 //イベント
 function getEventData() {
-  // キーワードを「東京」に設定
-  var baseURL = "https://api.atnd.org/events/?keyword=東京&format=jsonp&count=20&callback=callback";
+  // キーワードを「北九州」に設定
+  var baseURL = "https://api.atnd.org/events/?keyword=北九州&format=jsonp&count=20&callback=callback";
   var script = document.createElement('script');
   
   script.src = baseURL;
