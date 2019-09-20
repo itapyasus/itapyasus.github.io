@@ -51,7 +51,7 @@ function getSearch() {
 
 //ビデオ
 function getVideo() {
-    var URL = '<iframe width="560" height="315" src="https://www.youtube.com/edit?video_id=Bvr2p5prKBQ&ar=1568947086026" frameborder="0" allowfullscreen></iframe>';
+    var URL = '<iframe width="560" height="315" src="https://youtu.be/Bvr2p5prKBQ" frameborder="0" allowfullscreen></iframe>';
     
     content.innerHTML = URL;
 }
@@ -66,7 +66,7 @@ function getRadio() {
 //イベント
 function getEventData() {
   // キーワードを「北九州市」に設定
-  var baseURL = "https://api.atnd.org/events/?keyword=北九州市&format=jsonp&count=20&callback=callback";
+  var baseURL = "http://www.yahoo.co.jp?keyword=北九州市&format=jsonp&count=20&callback=callback";
   var script = document.createElement('script');
   
   script.src = baseURL;
