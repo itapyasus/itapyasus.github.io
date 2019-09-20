@@ -65,8 +65,8 @@ function getRadio() {
 
 //イベント
 function getEventData() {
-  // キーワードを「北九州」に設定
-  var baseURL = "https://api.atnd.org/events/?keyword=北九州&format=jsonp&count=20&callback=callback";
+  // キーワードを「北九州市」に設定
+  var baseURL = "https://api.atnd.org/events/?keyword=北九州市&format=jsonp&count=20&callback=callback";
   var script = document.createElement('script');
   
   script.src = baseURL;
