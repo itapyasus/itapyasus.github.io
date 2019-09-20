@@ -51,7 +51,7 @@ function getSearch() {
 
 //ビデオ
 function getVideo() {
-    var URL = '<iframe width="560" height="315" src="https://youtu.be/Bvr2p5prKBQ" frameborder="0" allowfullscreen></iframe>';
+    var URL = '<iframe width="560" height="315" src="https://www.youtube.com/edit?video_id=Bvr2p5prKBQ&ar=1568947086026" frameborder="0" allowfullscreen></iframe>';
     
     content.innerHTML = URL;
 }
