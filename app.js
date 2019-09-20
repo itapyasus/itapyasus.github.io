@@ -45,7 +45,7 @@ function getSearch() {
     
     iframe.width = '400px';
     iframe.height = '400px';
-    iframe.src = 'https://duckduckgo.com/';
+    iframe.src = 'http://www.yahoo.co.jp/';
     content.appendChild(iframe);
 }
 
