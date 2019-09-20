@@ -66,7 +66,7 @@ function getRadio() {
 //イベント
 function getEventData() {
   // キーワードを「北九州市」に設定
-  var baseURL = "http://www.yahoo.co.jp?keyword=北九州市&format=jsonp&count=20&callback=callback";
+  var baseURL = "http://www.yahoo.co.jp/?keyword=北九州市&format=jsonp&count=20&callback=callback";
   var script = document.createElement('script');
   
   script.src = baseURL;
