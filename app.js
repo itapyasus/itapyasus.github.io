@@ -58,7 +58,7 @@ function getVideo() {
 
 //ラジオ
 function getRadio() {
-  var URL = '<iframe src="http://tunein.com/embed/player/s48940" style="width:50%;height:100px;" scrolling="no" frameborder="no"></iframe>';
+  var URL = '<iframe src="http://tunein.com/embed/" style="width:50%;height:100px;" scrolling="no" frameborder="no"></iframe>';
   
   content.innerHTML = URL;
 }
